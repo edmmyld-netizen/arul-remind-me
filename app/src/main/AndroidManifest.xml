@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Session 3 permissions. Each one is here because a shipped feature needs it.
+
+      SCHEDULE_EXACT_ALARM is user-grantable and is the correct choice for a reminder app.
+      USE_EXACT_ALARM is deliberately NOT declared: it is auto-granted but Play restricts it
+      to clock/calendar apps, and the app degrades honestly without it.
+
+      Still to come: RECEIVE_BOOT_COMPLETED -> Session 4, RECORD_AUDIO -> Session 5.
+    -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <!-- Session 4: re-arm alarms after a restart. AlarmManager keeps nothing across boot. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--
+      Session 5A: voice input. Requested at runtime only when the user first taps the
+      microphone, never at startup. The mic is live only while the voice sheet is open.
+    -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <!--
+      Android 11+ package visibility: without this the app cannot see whether a speech
+      recognition service exists on the device.
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".ArulRemindMeApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/Theme.ArulRemindMe">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode|locale|layoutDirection"
+            android:theme="@style/Theme.ArulRemindMe">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Session 5A: launcher shortcut + App Actions capability declaration. -->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <!--
+          Full-screen alarm screen. Not exported: only this app's own full-screen intent
+          starts it. showWhenLocked/turnScreenOn ask the system to display it over the
+          keyguard - they do not unlock the device.
+        -->
+        <activity
+            android:name=".ui.alert.ReminderAlertActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:taskAffinity=".alert"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode|locale|layoutDirection"
+            android:theme="@style/Theme.ArulRemindMe" />
+
+        <!--
+          Receives the AlarmManager alarm and the notification actions. Not exported: only
+          this app's PendingIntents target it.
+        -->
+        <receiver
+            android:name=".alarm.ReminderAlarmReceiver"
+            android:exported="false"
+            android:enabled="true" />
+
+        <!--
+          Session 4: rebuilds every alarm after the events that wipe them - reboot, app
+          update, and time/timezone changes. exported="true" is required for BOOT_COMPLETED
+          because the sender is the system, not this app.
+        -->
+        <receiver
+            android:name=".alarm.BootCompletedReceiver"
+            android:exported="true"
+            android:enabled="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

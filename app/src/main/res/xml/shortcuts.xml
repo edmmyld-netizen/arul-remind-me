@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Session 5A.
+
+  <shortcut> is the launcher long-press shortcut and works on every device with no extra
+  setup.
+
+  <capability actions.intent.CREATE_REMINDER> is the App Actions declaration. It is inert
+  until the app is uploaded to a Play Console track and verified with the App Actions Test
+  Tool - see README "Assistant / App Actions". Declaring it here costs nothing and is the
+  officially supported route; nothing in the app claims Assistant already works.
+-->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <capability android:name="actions.intent.CREATE_REMINDER">
+        <intent
+            android:action="com.arulsundaresan.arulremindme.action.VOICE_REMINDER"
+            android:targetPackage="com.arulsundaresan.arulremindme"
+            android:targetClass="com.arulsundaresan.arulremindme.MainActivity">
+            <parameter
+                android:name="content.name"
+                android:key="voiceText" />
+        </intent>
+    </capability>
+
+    <shortcut
+        android:shortcutId="create_voice_reminder"
+        android:enabled="true"
+        android:icon="@drawable/ic_notification"
+        android:shortcutShortLabel="@string/shortcut_voice_short"
+        android:shortcutLongLabel="@string/shortcut_voice_long">
+        <intent
+            android:action="com.arulsundaresan.arulremindme.action.VOICE_REMINDER"
+            android:targetPackage="com.arulsundaresan.arulremindme"
+            android:targetClass="com.arulsundaresan.arulremindme.MainActivity" />
+    </shortcut>
+
+</shortcuts>

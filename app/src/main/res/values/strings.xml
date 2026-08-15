@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Default (Tanglish) strings — the language Arul asked for in the spec.
+  res/values-ta/strings.xml holds the fully-Tamil variant.
+  Add res/values-en/strings.xml later for a pure-English build.
+-->
+<resources>
+    <string name="app_name">Arul Remind Me</string>
+    <string name="app_subtitle">உங்கள் நினைவூட்டல் உதவியாளர்</string>
+    <string name="app_version_label">Version %1$s</string>
+
+    <!-- Home -->
+    <string name="home_voice_coming_soon">Voice Reminder – Coming Soon</string>
+    <string name="home_voice_coming_soon_hint">Session 5-ல் Tamil / English voice input வரும்</string>
+    <string name="home_add_reminder">+ Add Reminder</string>
+    <string name="home_today">Today\'s Reminders</string>
+    <string name="home_upcoming">Upcoming Reminders</string>
+    <string name="home_empty_title">No reminders yet</string>
+    <string name="home_empty_subtitle">இன்னும் Reminder எதுவும் இல்லை</string>
+    <string name="home_no_today">இன்றைக்கு Reminder இல்லை</string>
+    <string name="home_no_upcoming">Upcoming Reminder இல்லை</string>
+    <string name="home_open_completed">Completed reminders</string>
+
+    <!-- Editor -->
+    <string name="editor_add_title">புதிய Reminder</string>
+    <string name="editor_edit_title">Reminder-ஐ Edit செய்</string>
+    <string name="editor_what_label">என்ன Reminder வைக்க வேண்டும்?</string>
+    <string name="editor_what_hint">உதாரணம்: EB Bill கட்ட வேண்டும்</string>
+    <string name="editor_note_label">Note (optional)</string>
+    <string name="editor_note_hint">கூடுதல் விவரம்</string>
+    <string name="editor_when_label">எப்போது Reminder செய்ய வேண்டும்?</string>
+    <string name="editor_pick_date">தேதி / Date</string>
+    <string name="editor_pick_time">நேரம் / Time</string>
+    <string name="editor_save">Save Reminder</string>
+    <string name="editor_cancel">Cancel</string>
+    <string name="editor_error_empty_title">Reminder text-ஐ type பண்ணுங்க</string>
+    <string name="editor_warn_past">இந்த நேரம் ஏற்கனவே கடந்துவிட்டது</string>
+
+    <!-- Confirmation -->
+    <string name="confirm_heading">Reminder</string>
+    <string name="confirm_question">இந்த Reminder சரியா?</string>
+    <string name="confirm_save">✅ Save</string>
+    <string name="confirm_edit">✏️ Edit</string>
+    <string name="confirm_saved">✅ Reminder Saved</string>
+    <string name="confirm_updated">✅ Reminder Updated</string>
+
+    <!-- Reminder card -->
+    <string name="card_edit">Edit</string>
+    <string name="card_done">Done</string>
+    <string name="card_delete">Delete</string>
+    <string name="card_restore">Restore</string>
+    <string name="card_overdue">தாமதம் / Overdue</string>
+
+    <!-- Completed -->
+    <string name="completed_title">Completed</string>
+    <string name="completed_empty">Completed Reminder எதுவும் இல்லை</string>
+    <string name="completed_restored">Reminder மீண்டும் Pending-க்கு வந்துவிட்டது</string>
+
+    <!-- Common -->
+    <string name="action_back">Back</string>
+    <string name="action_ok">OK</string>
+    <string name="action_undo">Undo</string>
+    <string name="msg_deleted">Reminder deleted</string>
+    <string name="msg_completed">Reminder completed</string>
+    <string name="dialog_time_title">நேரம் தேர்ந்தெடுக்கவும்</string>
+
+    <!-- Session 2: natural-language entry -->
+    <string name="editor_nl_hint">உதாரணம்: நாளைக்கு காலை 8 மணிக்கு EB bill கட்டணும்</string>
+    <string name="editor_continue">Continue</string>
+    <string name="editor_or">அல்லது / OR</string>
+    <string name="editor_manual_label">Manual-ஆ enter பண்ணுங்க</string>
+    <string name="parse_ask_when">எப்போது Reminder செய்ய வேண்டும்? உதாரணம்: நாளை காலை 8 மணி</string>
+    <string name="parse_ask_date">எந்த தேதிக்கு Reminder வேண்டும்? தேதியை புரிந்துகொள்ள முடியவில்லை — உதாரணமாக ‘நாளை’ அல்லது ‘15 August’ என்று சொல்லுங்கள்.</string>
+    <string name="parse_ask_time">எந்த நேரத்தில் Reminder செய்ய வேண்டும்? நேரத்தை தெளிவாக சொல்லுங்கள். உதாரணம்: காலை 8 மணி அல்லது மாலை 5 மணி.</string>
+    <string name="parse_error_empty_input">Reminder-ஐ type பண்ணுங்க</string>
+    <string name="parse_error_no_text">Reminder-ல் என்ன செய்ய வேண்டும் என்று சொல்லுங்கள்.</string>
+    <string name="clarify_time_title">%1$s மணி — காலையா, மாலையா?</string>
+    <string name="clarify_time_question">காலை %1$s அல்லது மாலை %2$s — எது சரி?</string>
+
+    <!-- Session 3: notifications, alarm alert, permissions -->
+    <string name="notif_channel_name">Arul Reminders</string>
+    <string name="notif_channel_description">உங்கள் Reminder நேரத்தில் அலெர்ட் காட்டும்</string>
+    <string name="notif_action_done">✓ Done</string>
+    <string name="notif_action_snooze_minutes">⏰ Snooze %1$d min</string>
+    <string name="notif_action_open">Open</string>
+
+    <string name="alert_done">✓ DONE</string>
+    <string name="alert_snooze_minutes">⏰ %1$d min</string>
+    <string name="alert_dismiss">பின்னர் பார்க்கிறேன்</string>
+
+    <string name="perm_title">Reminder alert-க்கு இது தேவை</string>
+    <string name="perm_notifications">Notifications</string>
+    <string name="perm_exact_alarm">Exact Alarm</string>
+    <string name="perm_state_ok">Enabled</string>
+    <string name="perm_state_missing">Needs permission</string>
+    <string name="perm_notifications_why">Reminder-ஐ காட்ட notification permission தேவை. இல்லைனா நேரத்துக்கு alert வராது.</string>
+    <string name="perm_exact_alarm_why">சரியான நேரத்தில் alarm அடிக்க “Alarms &amp; reminders” permission தேவை. இல்லைனா Android alert-ஐ தாமதப்படுத்தலாம்.</string>
+    <string name="perm_open_settings">Notification Settings</string>
+    <string name="perm_open_alarm_settings">Alarm Settings</string>
+
+    <string name="debug_test_reminder">🔧 Test Reminder in 1 Minute (debug)</string>
+    <string name="debug_test_scheduled">Test reminder 1 நிமிடத்தில் — app-ஐ close பண்ணி lock பண்ணுங்க</string>
+
+    <!-- Session 4: recurring reminders + reliability -->
+    <string name="editor_repeat_label">திரும்பத் திரும்ப வேண்டுமா? / Repeat</string>
+    <string name="repeat_none">Once</string>
+    <string name="repeat_daily">Daily</string>
+    <string name="repeat_weekly">Weekly</string>
+    <string name="repeat_monthly">Monthly</string>
+    <string name="editor_repeat_daily_detail">தினமும் இதே நேரத்தில் reminder வரும்</string>
+    <string name="editor_repeat_weekly_detail">ஒவ்வொரு %1$s அன்றும் reminder வரும்</string>
+    <string name="editor_repeat_monthly_detail">ஒவ்வொரு மாதமும் %1$d ஆம் தேதி reminder வரும்</string>
+
+    <string name="reliability_title">Reminder Reliability</string>
+    <string name="reliability_more">Reliability check</string>
+    <string name="reliability_battery">Battery Optimization</string>
+    <string name="reliability_state_optimized">Optimized</string>
+    <string name="reliability_state_unrestricted">Unrestricted</string>
+    <string name="reliability_state_disabled">Disabled</string>
+    <string name="reliability_notifications_help">Notification permission இல்லைனா reminder நேரத்துக்கு எதுவும் காட்டப்படாது.</string>
+    <string name="reliability_exact_alarm_help">“Alarms &amp; reminders” permission இருந்தா மட்டும்தான் சரியான நேரத்தில் alarm அடிக்கும். இல்லைனா Android alert-ஐ தாமதப்படுத்தலாம்.</string>
+    <string name="reliability_battery_help">Battery optimization ON இருந்தா சில நேரம் Android reminder-ஐ தாமதப்படுத்தலாம். Unrestricted ஆக்கினா நம்பகத்தன்மை அதிகம். Exact alarm permission இருந்தா battery setting இல்லாமலும் வேலை செய்யும்.</string>
+    <string name="reliability_open_battery">Battery Settings</string>
+    <string name="reliability_oem_title">Phone brand settings</string>
+    <string name="reliability_oem_body">Xiaomi, Oppo, Vivo, Realme, Samsung போன்ற phone-களில் “Autostart”, “Background activity”, “Battery saver” settings reminder-ஐ தடுக்கலாம். இந்த app-ஆல் அந்த settings-ஐ தானாக மாற்ற முடியாது — நீங்களே phone Settings-ல் இந்த app-க்கு அனுமதி கொடுக்கணும்.</string>
+    <string name="reliability_reboot_note">Phone restart ஆனா saved reminder-கள் தானாகவே மறுபடி schedule ஆகும். ஆனால் app-ஐ uninstall பண்ணா எல்லா reminder-ம் போயிடும்.</string>
+
+    <!-- Session 5A: voice input -->
+    <string name="voice_speak_reminder">🎙️ Speak Reminder</string>
+    <string name="voice_speak_hint">Tamil, English அல்லது Tanglish-ல் பேசுங்க</string>
+    <string name="voice_listening">கேட்கிறேன்…</string>
+    <string name="voice_listening_hint">உதாரணம்: நாளைக்கு காலை 8 மணிக்கு EB bill கட்டணும்</string>
+    <string name="voice_permission_checking">Microphone permission கேட்கிறேன்…</string>
+    <string name="voice_cancel">Cancel</string>
+    <string name="voice_you_said">நீங்கள் சொன்னது:</string>
+    <string name="voice_continue">Continue</string>
+    <string name="voice_speak_again">🎙️ மீண்டும்</string>
+    <string name="voice_type_instead">Type Instead</string>
+    <string name="voice_try_again">Try Again</string>
+    <string name="voice_open_settings">Open Settings</string>
+
+    <string name="voice_error_not_understood">குரலை புரிந்துகொள்ள முடியவில்லை. மீண்டும் முயற்சி செய்யுங்கள்.</string>
+    <string name="voice_error_permission">Voice reminder பயன்படுத்த Microphone permission தேவை.</string>
+    <string name="voice_error_no_mic">இந்த device-ல் microphone கிடைக்கவில்லை.</string>
+    <string name="voice_error_unavailable">இந்த phone-ல் speech recognition service இல்லை. Google app-ஐ update பண்ணி பாருங்க.</string>
+    <string name="voice_error_network">Speech recognition-க்கு internet தேவைப்படுகிறது. Network-ஐ check பண்ணுங்க.</string>
+    <string name="voice_error_timeout">எதுவும் கேட்கவில்லை. மீண்டும் பேசுங்க.</string>
+    <string name="voice_error_busy">Speech service இப்போது busy-ஆ இருக்கு. கொஞ்ச நேரம் கழித்து முயற்சி செய்யுங்க.</string>
+
+    <string name="voice_lang_auto">Auto</string>
+    <string name="voice_lang_tamil">தமிழ்</string>
+    <string name="voice_lang_english">English</string>
+
+    <string name="voice_settings_title">Voice Reminder</string>
+    <string name="voice_settings_language">Language</string>
+    <string name="voice_settings_available">Speech recognition இந்த device-ல் கிடைக்கிறது.</string>
+    <string name="voice_settings_unavailable">இந்த device-ல் speech recognition கிடைக்கவில்லை. Voice button வேலை செய்யாது.</string>
+    <string name="voice_settings_auto_note">Android ஒரு நேரத்தில் ஒரு மொழியை மட்டுமே recognize பண்ணும். Auto என்பது phone-ன் default மொழியை பயன்படுத்தும் — Tamil-ம் English-ம் சேர்ந்து ஒரே நேரத்தில் recognize ஆகாது.</string>
+
+    <string name="shortcut_voice_short">Voice Reminder</string>
+    <string name="shortcut_voice_long">🎙️ Voice-ல் Reminder சேர்க்க</string>
+</resources>

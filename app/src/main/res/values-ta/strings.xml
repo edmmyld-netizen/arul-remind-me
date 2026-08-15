@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fully-Tamil variant. Loaded automatically when the device locale is Tamil. -->
+<resources>
+    <string name="app_subtitle">உங்கள் நினைவூட்டல் உதவியாளர்</string>
+
+    <string name="home_voice_coming_soon">குரல் நினைவூட்டல் – விரைவில்</string>
+    <string name="home_voice_coming_soon_hint">தமிழ் / ஆங்கிலக் குரல் உள்ளீடு அடுத்த பதிப்பில்</string>
+    <string name="home_add_reminder">+ புதிய நினைவூட்டல்</string>
+    <string name="home_today">இன்றைய நினைவூட்டல்கள்</string>
+    <string name="home_upcoming">வரவிருக்கும் நினைவூட்டல்கள்</string>
+    <string name="home_empty_title">இன்னும் நினைவூட்டல் இல்லை</string>
+    <string name="home_empty_subtitle">முதல் நினைவூட்டலைச் சேர்க்கவும்</string>
+    <string name="home_no_today">இன்றைக்கு நினைவூட்டல் இல்லை</string>
+    <string name="home_no_upcoming">வரவிருக்கும் நினைவூட்டல் இல்லை</string>
+    <string name="home_open_completed">முடிக்கப்பட்டவை</string>
+
+    <string name="editor_add_title">புதிய நினைவூட்டல்</string>
+    <string name="editor_edit_title">நினைவூட்டலைத் திருத்து</string>
+    <string name="editor_what_label">என்ன நினைவூட்ட வேண்டும்?</string>
+    <string name="editor_what_hint">உதாரணம்: மின் கட்டணம் கட்ட வேண்டும்</string>
+    <string name="editor_note_label">குறிப்பு (விருப்பம்)</string>
+    <string name="editor_note_hint">கூடுதல் விவரம்</string>
+    <string name="editor_when_label">எப்போது நினைவூட்ட வேண்டும்?</string>
+    <string name="editor_pick_date">தேதி</string>
+    <string name="editor_pick_time">நேரம்</string>
+    <string name="editor_save">சேமி</string>
+    <string name="editor_cancel">ரத்து</string>
+    <string name="editor_error_empty_title">நினைவூட்டல் விவரத்தை உள்ளிடவும்</string>
+    <string name="editor_warn_past">இந்த நேரம் ஏற்கனவே கடந்துவிட்டது</string>
+
+    <string name="confirm_heading">நினைவூட்டல்</string>
+    <string name="confirm_question">இந்த நினைவூட்டல் சரியா?</string>
+    <string name="confirm_save">✅ சேமி</string>
+    <string name="confirm_edit">✏️ திருத்து</string>
+    <string name="confirm_saved">✅ நினைவூட்டல் சேமிக்கப்பட்டது</string>
+    <string name="confirm_updated">✅ நினைவூட்டல் புதுப்பிக்கப்பட்டது</string>
+
+    <string name="card_edit">திருத்து</string>
+    <string name="card_done">முடிந்தது</string>
+    <string name="card_delete">நீக்கு</string>
+    <string name="card_restore">மீட்டெடு</string>
+    <string name="card_overdue">தாமதம்</string>
+
+    <string name="completed_title">முடிக்கப்பட்டவை</string>
+    <string name="completed_empty">முடிக்கப்பட்ட நினைவூட்டல் இல்லை</string>
+    <string name="completed_restored">நினைவூட்டல் மீண்டும் நிலுவைக்கு வந்தது</string>
+
+    <string name="action_back">பின்</string>
+    <string name="action_ok">சரி</string>
+    <string name="action_undo">மீட்டெடு</string>
+    <string name="msg_deleted">நினைவூட்டல் நீக்கப்பட்டது</string>
+    <string name="msg_completed">நினைவூட்டல் முடிக்கப்பட்டது</string>
+    <string name="dialog_time_title">நேரம் தேர்ந்தெடுக்கவும்</string>
+
+    <string name="editor_nl_hint">உதாரணம்: நாளைக்கு காலை 8 மணிக்கு மின் கட்டணம் கட்ட வேண்டும்</string>
+    <string name="editor_continue">தொடரவும்</string>
+    <string name="editor_or">அல்லது</string>
+    <string name="editor_manual_label">கைமுறையாக உள்ளிடவும்</string>
+    <string name="parse_ask_when">எப்போது நினைவூட்ட வேண்டும்? உதாரணம்: நாளை காலை 8 மணி</string>
+    <string name="parse_ask_date">எந்த தேதிக்கு நினைவூட்டல் வேண்டும்? தேதியை புரிந்துகொள்ள முடியவில்லை — உதாரணமாக ‘நாளை’ அல்லது ‘15 August’ என்று சொல்லுங்கள்.</string>
+    <string name="parse_ask_time">எந்த நேரத்தில் நினைவூட்ட வேண்டும்? நேரத்தை தெளிவாக சொல்லுங்கள். உதாரணம்: காலை 8 மணி அல்லது மாலை 5 மணி.</string>
+    <string name="parse_error_empty_input">நினைவூட்டலை உள்ளிடவும்</string>
+    <string name="parse_error_no_text">என்ன செய்ய வேண்டும் என்பதைச் சொல்லுங்கள்.</string>
+    <string name="clarify_time_title">%1$s மணி — காலையா, மாலையா?</string>
+    <string name="clarify_time_question">காலை %1$s அல்லது மாலை %2$s — எது சரி?</string>
+
+    <string name="notif_channel_name">அருள் நினைவூட்டல்கள்</string>
+    <string name="notif_channel_description">நினைவூட்டல் நேரத்தில் அறிவிப்பு காட்டும்</string>
+    <string name="notif_action_done">✓ முடிந்தது</string>
+    <string name="notif_action_snooze_minutes">⏰ %1$d நிமிடம் ஒத்திவை</string>
+    <string name="notif_action_open">திற</string>
+
+    <string name="alert_done">✓ முடிந்தது</string>
+    <string name="alert_snooze_minutes">⏰ %1$d நிமிடம்</string>
+    <string name="alert_dismiss">பின்னர் பார்க்கிறேன்</string>
+
+    <string name="perm_title">நினைவூட்டலுக்கு இது தேவை</string>
+    <string name="perm_notifications">அறிவிப்புகள்</string>
+    <string name="perm_exact_alarm">துல்லிய அலாரம்</string>
+    <string name="perm_state_ok">இயக்கத்தில்</string>
+    <string name="perm_state_missing">அனுமதி தேவை</string>
+    <string name="perm_notifications_why">நினைவூட்டலைக் காட்ட அறிவிப்பு அனுமதி தேவை.</string>
+    <string name="perm_exact_alarm_why">சரியான நேரத்தில் அலாரம் ஒலிக்க “Alarms &amp; reminders” அனுமதி தேவை.</string>
+    <string name="perm_open_settings">அறிவிப்பு அமைப்புகள்</string>
+    <string name="perm_open_alarm_settings">அலாரம் அமைப்புகள்</string>
+
+    <string name="editor_repeat_label">திரும்பத் திரும்ப</string>
+    <string name="repeat_none">ஒருமுறை</string>
+    <string name="repeat_daily">தினமும்</string>
+    <string name="repeat_weekly">வாரம்</string>
+    <string name="repeat_monthly">மாதம்</string>
+    <string name="editor_repeat_daily_detail">தினமும் இதே நேரத்தில் நினைவூட்டும்</string>
+    <string name="editor_repeat_weekly_detail">ஒவ்வொரு %1$s அன்றும் நினைவூட்டும்</string>
+    <string name="editor_repeat_monthly_detail">ஒவ்வொரு மாதமும் %1$d ஆம் தேதி நினைவூட்டும்</string>
+
+    <string name="reliability_title">நினைவூட்டல் நம்பகத்தன்மை</string>
+    <string name="reliability_more">நம்பகத்தன்மை சோதனை</string>
+    <string name="reliability_battery">பேட்டரி சிக்கனம்</string>
+    <string name="reliability_state_optimized">சிக்கனப்படுத்தப்பட்டது</string>
+    <string name="reliability_state_unrestricted">கட்டுப்பாடு இல்லை</string>
+    <string name="reliability_state_disabled">முடக்கப்பட்டது</string>
+    <string name="reliability_open_battery">பேட்டரி அமைப்புகள்</string>
+    <string name="reliability_oem_title">தொலைபேசி நிறுவன அமைப்புகள்</string>
+
+    <string name="voice_speak_reminder">🎙️ குரலில் சொல்லுங்கள்</string>
+    <string name="voice_speak_hint">தமிழ் அல்லது ஆங்கிலத்தில் பேசலாம்</string>
+    <string name="voice_listening">கேட்கிறேன்…</string>
+    <string name="voice_cancel">ரத்து</string>
+    <string name="voice_you_said">நீங்கள் சொன்னது:</string>
+    <string name="voice_continue">தொடரவும்</string>
+    <string name="voice_speak_again">🎙️ மீண்டும்</string>
+    <string name="voice_type_instead">தட்டச்சு செய்</string>
+    <string name="voice_try_again">மீண்டும் முயற்சி</string>
+    <string name="voice_open_settings">அமைப்புகளைத் திற</string>
+    <string name="voice_settings_title">குரல் நினைவூட்டல்</string>
+    <string name="voice_settings_language">மொழி</string>
+    <string name="shortcut_voice_short">குரல் நினைவூட்டல்</string>
+</resources>
